@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด | Body Scent</title>
+  <meta name="description" content="น้ำหอมฉีดตัวและโรลออน Body Scent เลือกกรองตามอารมณ์กลิ่น Fresh, Sweet, Confident, Romance">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific touch (can be moved into style.css later) -->
+  <style>
+    .page-title h1 { font-size: var(--text-2xl); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Body Scent</a>
+      <ul class="nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html" aria-current="page">สินค้า</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div class="section-head page-title">
+          <h1>สินค้าทั้งหมด</h1>
+          <span class="rule"></span>
+          <p class="lead">น้ำหอมฉีดตัวและโรลออน เลือกกลิ่นที่ตรงกับอารมณ์ของคุณ</p>
+        </div>
+
+        <div id="filter-bar" class="filters" role="group" aria-label="กรองสินค้าตามอารมณ์กลิ่น"></div>
+
+        <div id="product-list" class="product-grid" aria-live="polite"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <ul class="nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้า</a></li>
+      </ul>
+      <small>&copy; 2026 Body Scent</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

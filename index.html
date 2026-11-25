@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body Scent | น้ำหอมฉีดตัวและโรลออน</title>
+  <meta name="description" content="Body Scent กลิ่นที่ใช่ สะท้อนตัวตนในทุกโมเมนต์ของคุณ น้ำหอมฉีดตัวและโรลออน 4 อารมณ์กลิ่น Fresh, Sweet, Confident, Romance">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific touches (can be moved into style.css later) -->
+  <style>
+    .hero--full {
+      min-height: calc(100vh - 81px);
+      min-height: calc(100svh - 81px);
+      display: flex;
+      align-items: center;
+    }
+    .hero--full h1 {
+      max-width: 22em;
+      font-size: clamp(1.75rem, 4.2vw, 3rem);
+      line-height: 1.6;
+    }
+    .hero__name {
+      display: block;
+      margin-bottom: var(--space-2);
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      line-height: 1.1;
+      letter-spacing: 0.08em;
+    }
+    .hero--full .rule { margin-bottom: var(--space-4); }
+
+    a.mood-card { display: block; color: var(--ink); }
+    a.mood-card:hover { color: var(--ink); }
+    .mood-card .mood-th {
+      margin-bottom: var(--space-2);
+      font-family: var(--font-serif-th);
+      font-size: var(--text-lg);
+      color: var(--ink);
+    }
+
+    @media (max-width: 720px) {
+      .hero--full .rule { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Body Scent</a>
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้า</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--full">
+      <div class="container">
+        <span class="rule"></span>
+        <h1>
+          <span class="hero__name">Body Scent</span>
+          กลิ่นที่ใช่...สะท้อนตัวตนในทุกโมเมนต์ของคุณ
+        </h1>
+        <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section section--white" id="moods">
+      <div class="container">
+        <div class="section-head">
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <span class="rule"></span>
+          <p class="lead">4 อารมณ์กลิ่น เลือกดูสินค้าที่ตรงกับโมเมนต์ของคุณ</p>
+        </div>
+
+        <div class="grid grid--4">
+
+          <a href="product.html?mood=fresh" class="mood-card" data-mood="fresh">
+            <h3>Fresh</h3>
+            <span class="mood-line mood-line--center"></span>
+            <p class="mood-th">สดชื่น</p>
+            <p>กลิ่นสะอาดโปร่งเบาที่ปลุกความตื่นตัวให้พร้อมเริ่มต้นวันใหม่ มอบความรู้สึกสดใส สบายตัว และเฟรชได้ตลอดวัน</p>
+          </a>
+
+          <a href="product.html?mood=sweet" class="mood-card" data-mood="sweet">
+            <h3>Sweet</h3>
+            <span class="mood-line mood-line--center"></span>
+            <p class="mood-th">หวานละมุน</p>
+            <p>กลิ่นหวานแผ่วเบาที่อบอวลด้วยความอ่อนโยน น่ารัก และอบอุ่น ชวนให้รู้สึกสบายใจทุกครั้งที่ได้กลิ่น</p>
+          </a>
+
+          <a href="product.html?mood=confident" class="mood-card" data-mood="confident">
+            <h3>Confident</h3>
+            <span class="mood-line mood-line--center"></span>
+            <p class="mood-th">มั่นใจ</p>
+            <p>กลิ่นสะอาดทรงพลังที่สะท้อนความนิ่งและดูดี เพิ่มความน่าเชื่อถือให้คุณพร้อมลุยทุกสถานการณ์และพบเจอผู้คน</p>
+          </a>
+
+          <a href="product.html?mood=romance" class="mood-card" data-mood="romance">
+            <h3>Romance</h3>
+            <span class="mood-line mood-line--center"></span>
+            <p class="mood-th">โรแมนติก</p>
+            <p>กลิ่นหอมมีเสน่ห์ลึกซึ้งที่ให้ความรู้สึกอบอุ่น เย้ายวน และชวนให้ประทับใจไม่รู้ลืมในทุกค่ำคืนพิเศษ</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <ul class="nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้า</a></li>
+      </ul>
+      <small>&copy; 2026 Body Scent</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
